@@ -11,8 +11,15 @@ public class clase_platillos : MonoBehaviour {
 	private string votos;
 	private string id;
 	private string calificacion_acumulada_total;
+	private string imagen;
 
 
+	public string Imagen{
+
+
+		get{return imagen;}
+		set{imagen=value;}
+	}
 	public string Calificacion_Acumulada_Total{
 			get{ return calificacion_acumulada_total;}
 		set{calificacion_acumulada_total=value;}
@@ -54,17 +61,18 @@ public class clase_platillos : MonoBehaviour {
 		votos="";
 		id="";
 		calificacion_acumulada_total="";
-
+		imagen="";
 
 	}
 
-	public clase_platillos(string n, string p, string d, string e, string v, string i, string ct){
+	public clase_platillos(string n, string p, string d, string e, string v, string i, string ct, string img){
 		nombre=n;
 		precio=p;
 		descripcion=d;
 		estrellas=e;
 		votos=v;
 		id=i;
+		imagen=img;
 		calificacion_acumulada_total=ct;
 	}
 

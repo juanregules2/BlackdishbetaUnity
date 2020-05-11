@@ -85,52 +85,52 @@ public class calificaPlatillos : MonoBehaviour {
 	}
 	public void calificaM2(int c){
 		califcacion_public=c;
-		////Debug.Log("CAL:"+califcacion_public);
+		//////Debug.Log("CAL:"+califcacion_public);
 		int id_platillo=global_variables.platillo_actual;
 		for(int i=0;i<=global_variables.lista.Count-1;i++){
 			clase_platillos platillo_lista=(clase_platillos)global_variables.lista[i];
 			string idplatillostring=platillo_lista.Id;
-			Debug.Log("idplatillo:"+idplatillostring);
+			//Debug.Log("idplatillo:"+idplatillostring);
 
 			//DICE 2,4,1,5,P
 			int idp=int.Parse(idplatillostring);
-			////Debug.Log(idplatillostring+" CALIFICAPLATILLOS.CS LN93");
+			//////Debug.Log(idplatillostring+" CALIFICAPLATILLOS.CS LN93");
 			//ACTIVA LO QUE SIGUE:
 			if(id_platillo==idp){
 
-				////Debug.Log("votos"+platillo_lista.Votos);
+				//////Debug.Log("votos"+platillo_lista.Votos);
 				//a la calificacion acumulada le sumo la calificacion actual
 				if(platillo_lista.Calificacion_Acumulada_Total==""){
 					platillo_lista.Calificacion_Acumulada_Total="0";
 				}
-				//Debug.Log("antes de double:"+platillo_lista.Calificacion_Acumulada_Total);
+				////Debug.Log("antes de double:"+platillo_lista.Calificacion_Acumulada_Total);
 				//NO HAY NADA EN CALIFICACION ACUMULADA
 				double caldouble=double.Parse(platillo_lista.Calificacion_Acumulada_Total);
-				//Debug.Log("double:"+caldouble);
+				////Debug.Log("double:"+caldouble);
 				caldouble+=califcacion_public;
 
 				platillo_lista.Calificacion_Acumulada_Total=""+caldouble;
-				//Debug.Log("dOUBLEJUAN:"+platillo_lista.Calificacion_Acumulada_Total);
+				////Debug.Log("dOUBLEJUAN:"+platillo_lista.Calificacion_Acumulada_Total);
 
 
 
-					////Debug.Log("%%%%%%%");
-				////Debug.Log("CALIFICA PLATILLOS LN 102:"+platillo_lista.Calificacion_Acumulada_Total);
-				////Debug.Log("%%%%%%%");
+					//////Debug.Log("%%%%%%%");
+				//////Debug.Log("CALIFICA PLATILLOS LN 102:"+platillo_lista.Calificacion_Acumulada_Total);
+				//////Debug.Log("%%%%%%%");
 
 				int platillovotos=int.Parse(platillo_lista.Votos);
 				platillovotos++;
-				////Debug.Log("calificaplatillos_LN103:"+platillovotos);
+				//////Debug.Log("calificaplatillos_LN103:"+platillovotos);
 				int platillocalificacion_int=int.Parse(platillo_lista.Calificacion_Acumulada_Total);
-				//Debug.Log("Xcalificaplatillos_LN105:"+platillocalificacion_int);
-				//Debug.Log("X2:calString:"+platillo_lista.Calificacion_Acumulada_Total);
+				////Debug.Log("Xcalificaplatillos_LN105:"+platillocalificacion_int);
+				////Debug.Log("X2:calString:"+platillo_lista.Calificacion_Acumulada_Total);
 				double estrellasdouble=platillocalificacion_int/platillovotos;
-				////Debug.Log("calificaplatillos_LN107:"+estrellasdouble);
+				//////Debug.Log("calificaplatillos_LN107:"+estrellasdouble);
 				platillo_lista.Votos=""+platillovotos;
-				////Debug.Log("calificaplatillos_LN109:"+platillo_lista.Votos);
+				//////Debug.Log("calificaplatillos_LN109:"+platillo_lista.Votos);
 				platillo_lista.Estrellas=""+estrellasdouble;
-				////Debug.Log("calificaplatillos_LN111:"+platillo_lista.Estrellas);
-				//////Debug.Log("CA:"+platillo_lista.Calificacion_Acumulada_Total+"/P:"+platillo_lista.Nombre+"/Es:"+platillo_lista.Estrellas+"/V:"+platillo_lista.Votos);
+				//////Debug.Log("calificaplatillos_LN111:"+platillo_lista.Estrellas);
+				////////Debug.Log("CA:"+platillo_lista.Calificacion_Acumulada_Total+"/P:"+platillo_lista.Nombre+"/Es:"+platillo_lista.Estrellas+"/V:"+platillo_lista.Votos);
 			}
 
 
@@ -146,28 +146,28 @@ public class calificaPlatillos : MonoBehaviour {
 		{
 			clase_platillos Platillo =(clase_platillos)global_variables.lista[i2];
 				Basededatosestrellas.WriteLine("P");
-					//Debug.Log("P");
+					////Debug.Log("P");
 				Basededatosestrellas.WriteLine(Platillo.Id);
-					//Debug.Log("id:"+Platillo.Id);
+					////Debug.Log("id:"+Platillo.Id);
 				Basededatosestrellas.WriteLine(Platillo.Nombre);
-					//Debug.Log("nombre:"+Platillo.Nombre);
+					////Debug.Log("nombre:"+Platillo.Nombre);
 				Basededatosestrellas.WriteLine(Platillo.Precio);
 				
-				//Debug.Log("precio:"+Platillo.Precio);
+				////Debug.Log("precio:"+Platillo.Precio);
 				Basededatosestrellas.WriteLine(Platillo.Descripcion);
-					//Debug.Log("descripcion:"+Platillo.Descripcion);
+					////Debug.Log("descripcion:"+Platillo.Descripcion);
 				Basededatosestrellas.WriteLine(Platillo.Estrellas);
-					//Debug.Log("estrellas:"+Platillo.Estrellas);
+					////Debug.Log("estrellas:"+Platillo.Estrellas);
 				Basededatosestrellas.WriteLine(Platillo.Votos);
-					//Debug.Log("votos:"+Platillo.Votos);
+					////Debug.Log("votos:"+Platillo.Votos);
 				Basededatosestrellas.WriteLine(Platillo.Calificacion_Acumulada_Total);
-					//Debug.Log("total:"+Platillo.Calificacion_Acumulada_Total);
-			/*	////Debug.Log("%%%%%%%");
-				////Debug.Log("CALIFICA PLATILLOS LN 135:"+Platillo.Calificacion_Acumulada_Total);
-				////Debug.Log("%%%%%%%");*/
+					////Debug.Log("total:"+Platillo.Calificacion_Acumulada_Total);
+			/*	//////Debug.Log("%%%%%%%");
+				//////Debug.Log("CALIFICA PLATILLOS LN 135:"+Platillo.Calificacion_Acumulada_Total);
+				//////Debug.Log("%%%%%%%");*/
 		}
 	
-		////Debug.Log(""+Basededatosestrellas);
+		//////Debug.Log(""+Basededatosestrellas);
 		Basededatosestrellas.Close();
 	
 

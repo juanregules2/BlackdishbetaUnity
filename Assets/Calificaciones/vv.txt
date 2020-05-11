@@ -1,48 +1,56 @@
 P
 2
-pollo
-87
-sdsdsfsaf
-4
-5
-5
-P
-4
-sopa
-654
-sgsgdageo
+Hot Dog Mexicano
+45
+Guacamole, Tocino y Queso
 3
+2
 7
+P
 4
+Hot Dog Español
+45
+Chorizo y Queso
+4
+2
+9
 P
 1
-Espaguetti
-43
-sabroso espaguetti
+Hot Dog Clasico
+30
+Tocino y Queso
+5
 1
-4
-8
+5
 P
 5
-papas
-65
-dfgt9hu
+Hot Dog Casa Vieja
+50
+Queso, Champiñones, Tocino y Aros de Cebolla
+5
 1
-9
-9
+5
 P
 3
-lasagna
-234
-dsfsdfdsfsd
+Hot Dog Italiano
+45
+Champiñones y Queso
 3
-3
-11
+2
+6
+P
+6
+Pizza Carnes Frias
+130
+Salsa de tomate, Salami, Pepperoni, Jamón y Queso
+5
+1
+5
 P
 0
-quesadillas
-22
-ricas quesadillas
+Hot Dog Hawaiiano
+45
+jamón, piña y queso
+5
 1
-6
-9
+5
